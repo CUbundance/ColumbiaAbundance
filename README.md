@@ -29,11 +29,11 @@ window). That's it — no server required.
 3. **Substack link** — every page's footer has a "Substack" link that also
    currently points to `#`, marked with a `TODO` comment. Replace it with your
    Substack URL once you have one.
-4. **Officers** — `leadership.html` has 3 placeholder officer cards (President,
-   Vice President, Communications Director). Replace `[Name]` and the bio line
-   in each `.officer-card`, and copy/paste the block to add more officers. The
-   circle currently shows a single letter — swap it for a photo later by
-   putting an `<img>` inside `.officer-avatar` in place of the letter.
+4. **Leadership Team** — `leadership.html` has 3 placeholder `.officer-card`s
+   (name + one-line bio, no titles). Replace `[Name]` and the bio line in each,
+   and copy/paste the block to add more people. The circle currently shows a
+   `?` — swap it for that person's initial, or later for a photo by putting an
+   `<img>` inside `.officer-avatar` in place of the letter.
 
 ## Publishing it later
 

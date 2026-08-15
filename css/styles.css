@@ -327,15 +327,8 @@ section.soft {
 }
 
 .officer-card h3 {
-  margin: 0 0 0.15rem;
-  font-size: 1.05rem;
-}
-
-.officer-role {
-  color: var(--color-accent);
-  font-weight: 600;
-  font-size: 0.88rem;
   margin: 0 0 var(--space-1);
+  font-size: 1.05rem;
 }
 
 .officer-card p.officer-bio {
