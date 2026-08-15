@@ -20,9 +20,10 @@ window). That's it — no server required.
 
 ## Things to fill in
 
-1. **Mission statement** — `about.html` (and a short teaser on `index.html`)
-   has a placeholder box marked `TODO: replace with chapter mission
-   statement`. Replace it with your own text.
+1. **Mission statement** — `about.html` ("Our Mission" page) has a placeholder
+   box marked `TODO: replace with chapter mission statement`. Replace it with
+   your own text. The Home page (`index.html`) intentionally stays broad and
+   just links to this page — put the specifics there, not on Home.
 2. **Sign-up link** — `contact.html` has a "Open sign-up form" button that
    currently points to `#`. Once you have a Google Form, replace the `href="#"`
    on that button with your form's URL.
