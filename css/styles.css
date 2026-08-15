@@ -17,6 +17,8 @@
   /* Type */
   --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto,
     Helvetica, Arial, sans-serif;
+  --font-heading: Georgia, Cambria, "Iowan Old Style", "Times New Roman", Times,
+    serif;
   --font-size-base: 17px;
   --line-height-base: 1.6;
 
@@ -30,7 +32,7 @@
 
   /* Layout */
   --content-width: 1080px;
-  --radius: 10px;
+  --radius: 4px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -74,6 +76,13 @@ a {
   color: var(--color-accent);
 }
 
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
 .wrap {
   max-width: var(--content-width);
   margin: 0 auto;
@@ -88,6 +97,7 @@ a {
   z-index: 10;
   background: color-mix(in srgb, var(--color-bg) 88%, transparent);
   backdrop-filter: blur(8px);
+  border-top: 3px solid var(--color-accent);
   border-bottom: 1px solid var(--color-border);
 }
 
@@ -101,19 +111,27 @@ a {
 .brand {
   display: flex;
   align-items: center;
-  gap: var(--space-1);
+  gap: var(--space-2);
+  font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   text-decoration: none;
   color: var(--color-text);
-  letter-spacing: -0.01em;
 }
 
 .brand .mark {
-  width: 28px;
-  height: 28px;
-  border-radius: 8px;
-  background: var(--color-accent);
+  width: 32px;
+  height: 32px;
+  border: 1.5px solid var(--color-accent);
+  border-radius: 3px;
+  color: var(--color-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
   flex-shrink: 0;
 }
 
@@ -131,12 +149,14 @@ a {
   text-decoration: none;
   font-weight: 500;
   font-size: 0.95rem;
+  text-underline-offset: 4px;
   transition: color 0.15s ease;
 }
 
-.nav-links a:hover,
-.nav-links a[aria-current="page"] {
+.nav-links a:not(.btn):hover,
+.nav-links a:not(.btn)[aria-current="page"] {
   color: var(--color-text);
+  text-decoration: underline;
 }
 
 .nav-links .btn {
@@ -173,12 +193,11 @@ a {
   border-radius: var(--radius);
   border: none;
   cursor: pointer;
-  transition: background 0.15s ease, transform 0.15s ease;
+  transition: background 0.15s ease;
 }
 
 .btn:hover {
   background: var(--color-accent-dark);
-  transform: translateY(-1px);
 }
 
 .btn-outline {
@@ -195,40 +214,38 @@ a {
 
 .hero {
   padding: var(--space-6) 0 var(--space-5);
-  text-align: center;
+  border-bottom: 1px solid var(--color-border);
 }
 
 .eyebrow {
   display: inline-block;
-  color: var(--color-accent);
-  background: var(--color-accent-soft);
+  color: var(--color-accent-dark);
   font-weight: 600;
-  font-size: 0.82rem;
-  letter-spacing: 0.04em;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  padding: 0.35rem 0.9rem;
-  border-radius: 999px;
+  padding-bottom: 0.6rem;
   margin-bottom: var(--space-3);
+  border-bottom: 2px solid var(--color-accent);
 }
 
 .hero h1 {
-  font-size: clamp(2.2rem, 5vw, 3.4rem);
-  line-height: 1.12;
-  letter-spacing: -0.02em;
+  font-size: clamp(2.1rem, 4.5vw, 3.1rem);
+  line-height: 1.18;
   margin: 0 0 var(--space-3);
+  max-width: 800px;
 }
 
 .hero p {
   color: var(--color-text-muted);
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   max-width: 640px;
-  margin: 0 auto var(--space-4);
+  margin: 0 0 var(--space-4);
 }
 
 .hero-actions {
   display: flex;
   gap: var(--space-2);
-  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -244,8 +261,7 @@ section.soft {
 
 .section-head {
   max-width: 640px;
-  margin: 0 auto var(--space-4);
-  text-align: center;
+  margin: 0 0 var(--space-4);
 }
 
 .section-head h2 {
@@ -273,14 +289,15 @@ section.soft {
 }
 
 .pillar .icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 9px;
-  background: var(--color-accent-soft);
-  color: var(--color-accent);
+  width: 36px;
+  height: 36px;
+  border: 1.5px solid var(--color-accent);
+  border-radius: var(--radius);
+  color: var(--color-accent-dark);
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: var(--font-heading);
   font-weight: 700;
   margin-bottom: var(--space-2);
 }
@@ -319,17 +336,18 @@ section.soft {
 }
 
 .officer-avatar {
-  width: 84px;
-  height: 84px;
+  width: 76px;
+  height: 76px;
   margin: 0 auto var(--space-2);
-  border-radius: 999px;
-  background: var(--color-accent-soft);
+  border: 1.5px solid var(--color-accent);
+  border-radius: var(--radius);
   color: var(--color-accent-dark);
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 
 .officer-card h3 {
@@ -371,7 +389,6 @@ section.soft {
 
 .prose {
   max-width: 680px;
-  margin: 0 auto;
   color: var(--color-text);
 }
 
@@ -457,7 +474,7 @@ section.soft {
 
   .nav-links {
     position: absolute;
-    top: 72px;
+    top: 75px;
     left: 0;
     right: 0;
     background: var(--color-bg);
