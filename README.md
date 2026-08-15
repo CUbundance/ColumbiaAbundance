@@ -26,9 +26,9 @@ window). That's it — no server required.
 2. **Sign-up link** — `contact.html` has a "Open sign-up form" button that
    currently points to `#`. Once you have a Google Form, replace the `href="#"`
    on that button with your form's URL.
-3. **Substack link** — every page's footer has a "Substack" link that also
-   currently points to `#`, marked with a `TODO` comment. Replace it with your
-   Substack URL once you have one.
+3. **Social links** — every page's footer has "Substack", "Instagram", and "X"
+   links that all currently point to `#`, each marked with a `TODO` comment.
+   Replace them with your real URLs once you have accounts set up.
 4. **Leadership Team details** — `leadership.html` lists the 4 team members
    (name + class year, no titles), each with placeholder `Hometown: [City,
    State]` and `Major: [Major]` lines, plus a bio line marked `[One line about
