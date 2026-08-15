@@ -11,7 +11,7 @@ window). That's it — no server required.
 
 ## Files
 
-- `index.html`, `about.html`, `contact.html` — the three pages
+- `index.html`, `about.html`, `leadership.html`, `contact.html` — the site's pages
 - `css/styles.css` — all styling. Colors, fonts, and spacing are defined as
   variables at the top of the file (`:root { ... }`) — change those to
   re-theme the whole site at once.
@@ -29,6 +29,11 @@ window). That's it — no server required.
 3. **Substack link** — every page's footer has a "Substack" link that also
    currently points to `#`, marked with a `TODO` comment. Replace it with your
    Substack URL once you have one.
+4. **Officers** — `leadership.html` has 3 placeholder officer cards (President,
+   Vice President, Communications Director). Replace `[Name]` and the bio line
+   in each `.officer-card`, and copy/paste the block to add more officers. The
+   circle currently shows a single letter — swap it for a photo later by
+   putting an `<img>` inside `.officer-avatar` in place of the letter.
 
 ## Publishing it later
 
