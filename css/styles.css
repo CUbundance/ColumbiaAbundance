@@ -300,8 +300,14 @@ section.soft {
 
 .officers {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--space-3);
+}
+
+@media (min-width: 900px) {
+  .officers {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .officer-card {
