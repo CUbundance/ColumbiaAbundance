@@ -18,7 +18,7 @@ window). That's it — no server required.
 - `js/nav.js` — small script for the mobile menu toggle, nothing else.
 - `assets/` — empty for now; drop a logo or images here later.
 
-## Two things to fill in
+## Things to fill in
 
 1. **Mission statement** — `about.html` (and a short teaser on `index.html`)
    has a placeholder box marked `TODO: replace with chapter mission
@@ -26,6 +26,9 @@ window). That's it — no server required.
 2. **Sign-up link** — `contact.html` has a "Open sign-up form" button that
    currently points to `#`. Once you have a Google Form, replace the `href="#"`
    on that button with your form's URL.
+3. **Substack link** — every page's footer has a "Substack" link that also
+   currently points to `#`, marked with a `TODO` comment. Replace it with your
+   Substack URL once you have one.
 
 ## Publishing it later
 
