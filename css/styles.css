@@ -4,15 +4,15 @@
    ========================================================================== */
 
 :root {
-  /* Color */
-  --color-bg: #ffffff;
-  --color-bg-soft: #f5f7fb;
-  --color-text: #1a2233;
-  --color-text-muted: #5b6472;
-  --color-accent: #2952e3;
-  --color-accent-dark: #1d3ea8;
-  --color-accent-soft: #e8edfc;
-  --color-border: #e3e7ee;
+  /* Color — light, airy palette built around Columbia Blue */
+  --color-bg: #fefeff;
+  --color-bg-soft: #eaf4fb;
+  --color-text: #22303e;
+  --color-text-muted: #64768a;
+  --color-accent: #1c6eb4;
+  --color-accent-dark: #145690;
+  --color-accent-soft: #d9ecf9;
+  --color-border: #dde8f0;
 
   /* Type */
   --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto,
@@ -35,14 +35,14 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg: #12151c;
-    --color-bg-soft: #1a1e28;
-    --color-text: #eef1f7;
-    --color-text-muted: #a3aab8;
-    --color-accent: #6c8bff;
-    --color-accent-dark: #91a8ff;
-    --color-accent-soft: #202a4a;
-    --color-border: #2a2f3c;
+    --color-bg: #16232f;
+    --color-bg-soft: #1e3247;
+    --color-text: #eaf4fb;
+    --color-text-muted: #a9c2d6;
+    --color-accent: #8fc7ee;
+    --color-accent-dark: #b3dbf5;
+    --color-accent-soft: #2b4a66;
+    --color-border: #2e4358;
   }
 }
 
