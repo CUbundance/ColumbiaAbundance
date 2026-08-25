@@ -255,6 +255,10 @@ section.soft {
   margin: 0;
 }
 
+.section-head p + p {
+  margin-top: var(--space-2);
+}
+
 .pillars {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
