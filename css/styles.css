@@ -110,7 +110,7 @@ body.home .site-header {
 
 /* Reserve space so the fixed button (below) never overlaps "Leadership". */
 body.home .site-header .wrap {
-  padding-right: 190px;
+  padding-right: 210px;
 }
 
 .floating-cta {
