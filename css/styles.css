@@ -113,11 +113,29 @@ body.home .site-header .wrap {
   padding-right: 210px;
 }
 
-.floating-cta {
+/* Positions "Get Involved" using the same centered .wrap column as every
+   other page's nav bar, instead of a raw viewport edge — so it lines up in
+   exactly the same spot when navigating between pages, rather than jumping
+   between "aligned to content" (other pages) and "aligned to browser edge"
+   (this page) on wide screens. */
+.floating-cta-bar {
   position: fixed;
-  top: 16px;
-  right: 24px;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 50;
+  pointer-events: none;
+}
+
+.floating-cta-wrap {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 75px;
+}
+
+.floating-cta {
+  pointer-events: auto;
 }
 
 .site-header .wrap {
@@ -538,9 +556,13 @@ section.soft {
     order: 0;
   }
 
-  .floating-cta {
-    top: 84px;
-    right: 16px;
+  .floating-cta-bar {
+    top: 75px;
+  }
+
+  .floating-cta-wrap {
+    height: auto;
+    padding-top: var(--space-2);
   }
 
   body.home .site-header .wrap {
