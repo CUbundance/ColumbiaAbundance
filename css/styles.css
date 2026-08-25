@@ -157,9 +157,14 @@ body.home .site-header {
   transition: color 0.15s ease;
 }
 
-.nav-links a:not(.btn):hover,
-.nav-links a:not(.btn)[aria-current="page"] {
+.nav-links a:not(.btn):hover {
   color: var(--color-text);
+  text-decoration: underline;
+}
+
+.nav-links a:not(.btn)[aria-current="page"] {
+  color: var(--color-accent);
+  font-weight: 700;
   text-decoration: underline;
 }
 
