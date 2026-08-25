@@ -325,20 +325,6 @@ section.soft {
   padding: var(--space-3);
 }
 
-.pillar .icon {
-  width: 36px;
-  height: 36px;
-  border: 1.5px solid var(--color-accent);
-  border-radius: var(--radius);
-  color: var(--color-accent-dark);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-heading);
-  font-weight: 700;
-  margin-bottom: var(--space-2);
-}
-
 .pillar h3 {
   margin: 0 0 var(--space-1);
   font-size: 1.05rem;
