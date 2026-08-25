@@ -138,6 +138,15 @@ body.home .site-header .wrap {
   pointer-events: auto;
 }
 
+/* Wider than the standard reading-width .wrap, so the nav sits close to the
+   actual browser corner instead of the narrower content column. Both the
+   header and the floating "Get Involved" bar use this same width, so they
+   stay lined up with each other across pages. */
+.site-header .wrap,
+.floating-cta-wrap {
+  max-width: 1400px;
+}
+
 .site-header .wrap {
   display: flex;
   align-items: center;
