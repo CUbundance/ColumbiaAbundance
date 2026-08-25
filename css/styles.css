@@ -280,6 +280,21 @@ section.soft {
   margin: 0;
 }
 
+/* Mirrors .split-head with the heading on the right — the h2 stays first in
+   the markup (for reading/accessibility order) and is just moved visually
+   via `order`. */
+.split-head--reverse {
+  grid-template-columns: 1fr minmax(220px, 380px);
+}
+
+.split-head--reverse h2 {
+  order: 2;
+}
+
+.split-head--reverse p {
+  order: 1;
+}
+
 .pillars {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -502,6 +517,11 @@ section.soft {
   .split-head {
     grid-template-columns: 1fr;
     gap: var(--space-2);
+  }
+
+  .split-head--reverse h2,
+  .split-head--reverse p {
+    order: 0;
   }
 
   .nav-toggle {
