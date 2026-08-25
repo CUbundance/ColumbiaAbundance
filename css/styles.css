@@ -261,13 +261,14 @@ section.soft {
 
 .split-head {
   display: grid;
-  grid-template-columns: minmax(180px, 320px) 1fr;
-  gap: var(--space-4);
-  align-items: start;
+  grid-template-columns: minmax(220px, 380px) 1fr;
+  gap: var(--space-5);
+  align-items: center;
 }
 
 .split-head h2 {
-  font-size: clamp(1.6rem, 3vw, 2.1rem);
+  font-size: clamp(2.2rem, 4.5vw, 3.2rem);
+  line-height: 1.05;
   letter-spacing: -0.01em;
   margin: 0;
 }
