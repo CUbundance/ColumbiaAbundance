@@ -267,7 +267,7 @@ section.soft {
 }
 
 .split-head h2 {
-  font-size: clamp(2.2rem, 4.5vw, 3.2rem);
+  font-size: clamp(2.1rem, 4.3vw, 3rem);
   line-height: 1.05;
   letter-spacing: -0.01em;
   margin: 0;
@@ -275,6 +275,7 @@ section.soft {
 
 .split-head p {
   color: var(--color-text-muted);
+  font-size: 19px;
   max-width: 640px;
   margin: 0;
 }
