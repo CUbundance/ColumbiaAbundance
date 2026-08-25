@@ -429,8 +429,9 @@ section.soft {
 }
 
 .prose h2 {
-  font-size: 1.5rem;
-  margin-top: var(--space-4);
+  font-size: clamp(1.8rem, 3.2vw, 2.4rem);
+  letter-spacing: -0.01em;
+  margin-top: var(--space-6);
 }
 
 .prose h2:first-child {
@@ -439,6 +440,7 @@ section.soft {
 
 .prose p {
   color: var(--color-text-muted);
+  font-size: 19px;
 }
 
 /* ---- Contact / join card ---- */
