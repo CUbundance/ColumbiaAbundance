@@ -111,20 +111,19 @@ h3 {
 
 .brand {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: baseline;
+  gap: 0.35rem;
   text-decoration: none;
   flex-shrink: 0;
-  line-height: 1.05;
 }
 
 .brand .line {
-  display: block;
   font-family: var(--font-wordmark);
   font-weight: 700;
-  font-size: 1.05rem;
+  font-size: clamp(1.2rem, 3vw, 1.55rem);
   color: var(--color-accent-dark);
   letter-spacing: -0.01em;
+  white-space: nowrap;
 }
 
 .nav-links {
