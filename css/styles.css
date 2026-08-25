@@ -102,6 +102,19 @@ h3 {
   border-bottom: 1px solid var(--color-border);
 }
 
+/* On the homepage, the title/nav bar scrolls away with the page instead of
+   staying pinned — only the "Join us" button (below) stays fixed. */
+body.home .site-header {
+  position: static;
+}
+
+.floating-cta {
+  position: fixed;
+  top: 16px;
+  right: 24px;
+  z-index: 50;
+}
+
 .site-header .wrap {
   display: flex;
   align-items: center;
@@ -521,6 +534,11 @@ section.soft {
   .split-head--reverse h2,
   .split-head--reverse p {
     order: 0;
+  }
+
+  .floating-cta {
+    top: 84px;
+    right: 16px;
   }
 
   .nav-toggle {
