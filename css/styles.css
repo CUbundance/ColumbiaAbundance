@@ -345,6 +345,10 @@ section.soft {
   font-size: 0.95rem;
 }
 
+.pillar p + p {
+  margin-top: var(--space-2);
+}
+
 /* ---- Leadership / officers ---- */
 
 .officers {
