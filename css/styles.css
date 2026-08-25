@@ -259,6 +259,25 @@ section.soft {
   margin-top: var(--space-2);
 }
 
+.split-head {
+  display: grid;
+  grid-template-columns: minmax(180px, 320px) 1fr;
+  gap: var(--space-4);
+  align-items: start;
+}
+
+.split-head h2 {
+  font-size: clamp(1.6rem, 3vw, 2.1rem);
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.split-head p {
+  color: var(--color-text-muted);
+  max-width: 640px;
+  margin: 0;
+}
+
 .pillars {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -476,6 +495,11 @@ section.soft {
   .pillars,
   .officers {
     grid-template-columns: 1fr;
+  }
+
+  .split-head {
+    grid-template-columns: 1fr;
+    gap: var(--space-2);
   }
 
   .nav-toggle {
