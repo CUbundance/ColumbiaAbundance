@@ -103,9 +103,14 @@ h3 {
 }
 
 /* On the homepage, the title/nav bar scrolls away with the page instead of
-   staying pinned — only the "Join us" button (below) stays fixed. */
+   staying pinned — only the "Get Involved" button (below) stays fixed. */
 body.home .site-header {
   position: static;
+}
+
+/* Reserve space so the fixed button (below) never overlaps "Leadership". */
+body.home .site-header .wrap {
+  padding-right: 190px;
 }
 
 .floating-cta {
@@ -536,6 +541,10 @@ section.soft {
   .floating-cta {
     top: 84px;
     right: 16px;
+  }
+
+  body.home .site-header .wrap {
+    padding-right: var(--space-3);
   }
 
   .nav-toggle {
